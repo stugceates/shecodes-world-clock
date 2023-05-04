@@ -25,18 +25,18 @@
   <body>
     <div class="container-wrapper">
       <h1>World Clock</h1>
-      <select name="cities" id="cities">
+      <select id="city">
         <option value="">Select a city...</option>
-        <option value="">London</option>
-        <option value="">New York</option>
-        <option value="">Istanbul</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Asia/Istanbul">Istanbul</option>
       </select>
 
-      <div class="container city-list">
+      <div class="container city-list" id="cities">
         <div class="row city-info">
           <div class="col-md-8 city-name" id="los-angeles">
             <h2>Los Angeles 🇺🇸</h2>
-            <div class="date">May 4th 2023</div>
+            <div class="date"></div>
           </div>
           <div class="col-md-4 time" id="los-angeles-time"></div>
         </div>
@@ -44,7 +44,7 @@
         <div class="row city-info" id="sydney">
           <div class="col-md-8 city-name">
             <h2>Sydney 🇦🇺</h2>
-            <div class="date">May 4th 2023</div>
+            <div class="date"></div>
           </div>
           <div class="col-md-4 time" id="sydney-time"></div>
         </div>
