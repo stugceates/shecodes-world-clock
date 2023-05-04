@@ -59,7 +59,8 @@ function updateCity(event){
             <div class="date">${cityTime.format('MMMM Do YYYY')}</div>
           </div>
           <div class="col-md-4 time">${cityTime.format("LTS")}</div>
-    </div>      
+    </div>   
+    <a href="https://selina-world-clock.netlify.app/">All cities</a>   
   `;
 
 }
