@@ -23,6 +23,24 @@ function updateTime() {
         let sydneyTimeElement = document.querySelector("#sydney-time");
         sydneyTimeElement.innerHTML = moment().tz("Australia/Sydney").format("LTS")
     }
+    let tokyoElement = document.querySelector("#tokyo");
+    if (tokyoElement){
+        
+        let tokyoDateElement = tokyoElement.querySelector(".date");
+        tokyoDateElement.innerHTML = moment().tz("Asia/Tokyo").format('MMMM Do YYYY')
+
+        let tokyoTimeElement = document.querySelector("#tokyo-time");
+        tokyoTimeElement.innerHTML = moment().tz("Asia/Tokyo").format("LTS")
+    }
+    let amsterdamElement = document.querySelector("#amsterdam");
+    if (amsterdamElement){
+        
+        let amsterdamDateElement = amsterdamElement.querySelector(".date");
+        amsterdamDateElement.innerHTML = moment().tz("Europe/Amsterdam").format('MMMM Do YYYY')
+
+        let amsterdamTimeElement = document.querySelector("#amsterdam-time");
+        amsterdamTimeElement.innerHTML = moment().tz("Europe/Amsterdam").format("LTS")
+    }
 }
 
 function updateCity(event){
